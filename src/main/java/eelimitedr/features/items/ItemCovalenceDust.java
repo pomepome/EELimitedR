@@ -64,6 +64,6 @@ public class ItemCovalenceDust extends ItemEE implements UnlocalizedRegistry
     {
         super.registerIcons(par1IconRegister);
         mid = par1IconRegister.registerIcon("eelimitedr:CovalenceDust_mid");
-        high = par1IconRegister.registerIcon("eelimitedr:CovalenceDust_High");
+        high = par1IconRegister.registerIcon("eelimitedr:CovalenceDust_high");
     }
 }

@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import eelimitedr.features.entities.EntityNovaPrimed;
 import eelimitedr.registry.UnlocalizedRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockTNT;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
