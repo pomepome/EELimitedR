@@ -1,0 +1,54 @@
+{
+	"items.charge":
+	{
+		"category":"master",
+		"sounds":
+		[
+			"items/charge"
+		]
+	},
+	"items.action":
+	{
+		"category":"master",
+		"sounds":
+		[
+			"items/action"
+		]
+	},
+	"items.uncharge":
+	{
+		"category":"master",
+		"sounds":
+		[
+		 	"items/uncharge"
+		 ]
+
+	},
+	"items.transmute":
+	{
+		"category":"master",
+		"sounds":
+		[
+		 	"items/transmute"
+		 ]
+
+	},
+	"items.heal":
+	{
+		"category":"master",
+		"sounds":
+		[
+		 	"items/heal"
+		 ]
+
+	},
+    "items.chargetick":
+    {
+        "category":"master",
+        "sounds":
+        [
+            "items/chargetick"
+         ]
+
+    }
+}

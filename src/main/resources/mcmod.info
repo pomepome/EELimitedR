@@ -1,0 +1,16 @@
+[
+{
+  "modid": "EELimitedR",
+  "name": "EELimitedR",
+  "description": "recreation of olf Equivalent Exchange(not EE2).",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["pome"],
+  "credits": "X3n0ph0b3 for making original mod, FML guys for let me modding, And you!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

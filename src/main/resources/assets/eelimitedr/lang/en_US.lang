@@ -1,0 +1,83 @@
+﻿#English Language File
+
+#CreativeTab
+itemGroup.EELimitedR=EELimitedR
+
+#enchantment
+enchantment.level.20=XX
+
+#Item names
+item.PhilStone.name=Philosopher's Stone
+item.DarkMatter.name=Dark Matter
+item.AlchemicalCoal.name=Alchemical Coal
+item.MobiusFuel.name=Mobius Fuel
+item.Volcanite.name=Volcanite Amulet
+item.Evertide.name=Evertide Amulet
+item.RepairCharm.name=Talisman of Repair
+item.CovalenceDust_low.name=Covalence Dust(low)
+item.CovalenceDust_mid.name=Covalence Dust(mid)
+item.CovalenceDust_high.name=Covalence Dust(high)
+item.ArchangelsSmite.name=Archangel's Smite
+item.Swift.name=Swiftwolf's Rending Gale
+item.BlackHoleBand.name=Black Hole Band
+
+item.DMSword.name=Darkmatter Sword
+item.DMPickaxe.name=Darkmatter Pickaxe
+item.DMAxe.name=Darkmatter Axe
+item.DMHoe.name=Darkmatter Hoe
+item.DMShears.name=Darkmatter Shears
+item.DMShovel.name=Darkmatter Shovel
+
+#Klein Star names
+item.Klein_0.name=Klein Star Ein
+item.Klein_1.name=Klein Star Zwei
+item.Klein_2.name=Klein Star Drei
+item.Klein_3.name=Klein Star Vier
+item.Klein_4.name=Klein Star Sphere
+item.Klein_5.name=Klein Star Omega
+
+#Block names
+tile.DMBlock.name=Darkmatter Block
+tile.EETorch.name=Interdiction Torch
+tile.AlchChest.name=Alchemical Chest
+
+tile.RMBlock.name=Redmatter Block
+tile.Aggregator.name=Glowstone Aggregator
+tile.DMFurnace.name=Darkmatter Furnace
+tile.DMLocus.name=Darkmatter Locus
+tile.AlchChest_colored.name=Color Filtered Alchemical Chest
+tile.NovaCatalyst.name=Nova Catalyst
+
+#Achievements
+achievement.getPhil=Take the first step!
+achievement.getPhil.desc=Make a Philosopher's stone
+achievement.getDM=Invisible Matter
+achievement.getDM.desc=Make a Dark Matter
+
+#Containers
+container.aggregator=Aggregator
+container.locus=Locus
+container.dmfurnace=DM Furnace
+
+#Armors
+item.DMArmor_head.name=Darkmatter Helmet
+item.DMArmor_chest.name=Darkmatter Chestplate
+item.DMArmor_legs.name=Darkmatter Leggings
+item.DMArmor_feet.name=Darkmatter Boots
+item.RMArmor_head.name=Redmatter Helmet
+item.RMArmor_chest.name=Redmatter Chestplate
+item.RMArmor_legs.name=Redmatter Leggings
+item.RMArmor_feet.name=Redmatter Boots
+
+#Time Watch
+timewatch.normal=Time is now flowing as usual.
+timewatch.forward=Time is now forwarding faster.
+timewatch.reverse=Time is now backwarding.
+timewatch.stop=Time has stopped.
+timewatch.failed=Failed to activate.
+
+#Inventory Operator
+operator.remove=Remove
+operator.copy=Copy
+operator.desc.remove=Mode has changed to remove mode.
+operator.desc.copy=Mode has changed to copy mode.

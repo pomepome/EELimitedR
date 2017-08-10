@@ -1,0 +1,94 @@
+package eelimitedr.guis.containers;
+
+import eelimitedr.features.tileentities.TileEntityAlchChest;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
+
+public class ContainerAlchChest extends Container
+{
+	private TileEntityAlchChest tile;
+
+	public ContainerAlchChest(TileEntityAlchChest tile,InventoryPlayer player)
+	{
+		this.tile = tile;
+		tile.openInventory();
+
+		//Chest Inventory
+		for (int i = 0; i < 8; i++)
+		{
+			for (int j = 0; j < 13; j++)
+			{
+				this.addSlotToContainer(new Slot(tile, j + i * 13, 12 + j * 18, 5 + i * 18));
+			}
+		}
+		//Player Inventory
+		for(int i = 0; i < 3; i++)
+		{
+			for(int j = 0; j < 9; j++)
+			{
+				this.addSlotToContainer(new Slot(player, j + i * 9 + 9, 48 + j * 18, 152 + i * 18));
+			}
+		}
+		//Player Hotbar
+		for (int i = 0; i < 9; i++)
+		{
+			this.addSlotToContainer(new Slot(player, i, 48 + i * 18, 210));
+		}
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer player)
+	{
+		return true;
+	}
+
+	@Override
+	public ItemStack transferStackInSlot(EntityPlayer player, int slotIndex)
+	{
+		Slot slot = this.getSlot(slotIndex);
+
+		if (slot == null || !slot.getHasStack())
+		{
+			return null;
+		}
+
+		ItemStack stack = slot.getStack();
+		ItemStack newStack = stack.copy();
+
+		if (slotIndex < 104)
+		{
+			if (!this.mergeItemStack(stack, 131, this.inventorySlots.size(), false))
+			{
+				if(!this.mergeItemStack(stack, 104, 130, false))
+				{
+					return null;
+				}
+			}
+		}
+		else if (!this.mergeItemStack(stack, 0, 104, false))
+		{
+			return null;
+		}
+
+		if (stack.stackSize == 0)
+		{
+			slot.putStack((ItemStack)null);
+		}
+		else
+		{
+			slot.onSlotChanged();
+		}
+
+		return newStack;
+	}
+
+	@Override
+	public void onContainerClosed(EntityPlayer player)
+	{
+		super.onContainerClosed(player);
+		tile.closeInventory();
+	}
+}
